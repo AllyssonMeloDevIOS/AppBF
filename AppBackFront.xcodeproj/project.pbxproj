@@ -12,6 +12,8 @@
 		343B9DA628D3A07E00956373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 343B9DA528D3A07E00956373 /* Assets.xcassets */; };
 		343B9DB128D3A48A00956373 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B9DB028D3A48A00956373 /* LoginScreen.swift */; };
 		848434572A76957000544825 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B9D9E28D3A07C00956373 /* SceneDelegate.swift */; };
+		849DED5A2A8E9EAB00BA8555 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849DED592A8E9EAB00BA8555 /* TabBarVC.swift */; };
+		849DED5E2A8E9F5E00BA8555 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849DED5D2A8E9F5E00BA8555 /* HomeVC.swift */; };
 		84A14B722A75ADD800B5F492 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84A14B712A75ADD800B5F492 /* GoogleService-Info.plist */; };
 		84A14B752A75AEA500B5F492 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 84A14B742A75AEA500B5F492 /* FirebaseAuth */; };
 		84A14B772A75AEA500B5F492 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 84A14B762A75AEA500B5F492 /* FirebaseCrashlytics */; };
@@ -29,6 +31,8 @@
 		343B9DA528D3A07E00956373 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		343B9DAA28D3A07E00956373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		343B9DB028D3A48A00956373 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		849DED592A8E9EAB00BA8555 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		849DED5D2A8E9F5E00BA8555 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		84A14B712A75ADD800B5F492 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		84A14B7A2A75B10800B5F492 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		84A14B7C2A75B4D400B5F492 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
@@ -68,9 +72,10 @@
 		343B9D9B28D3A07C00956373 /* AppBackFront */ = {
 			isa = PBXGroup;
 			children = (
+				849DED5B2A8E9EF600BA8555 /* Feature */,
+				849DED582A8E9E1E00BA8555 /* TabBarController */,
 				84AE0A2D2A8AF62F00D0B408 /* Alert */,
 				84A14B782A75B0D300B5F492 /* Utils */,
-				84353C6C2A74417C00F1D22C /* Login */,
 				343B9D9C28D3A07C00956373 /* AppDelegate.swift */,
 				343B9D9E28D3A07C00956373 /* SceneDelegate.swift */,
 				343B9DA528D3A07E00956373 /* Assets.xcassets */,
@@ -96,6 +101,31 @@
 				343B9DB028D3A48A00956373 /* LoginScreen.swift */,
 			);
 			path = Screen;
+			sourceTree = "<group>";
+		};
+		849DED582A8E9E1E00BA8555 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				849DED592A8E9EAB00BA8555 /* TabBarVC.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		849DED5B2A8E9EF600BA8555 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				849DED5C2A8E9F1A00BA8555 /* Home */,
+				84353C6C2A74417C00F1D22C /* Login */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		849DED5C2A8E9F1A00BA8555 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				849DED5D2A8E9F5E00BA8555 /* HomeVC.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		84A14B782A75B0D300B5F492 /* Utils */ = {
@@ -204,9 +234,11 @@
 				343B9DA128D3A07C00956373 /* LoginVC.swift in Sources */,
 				343B9DB128D3A48A00956373 /* LoginScreen.swift in Sources */,
 				343B9D9D28D3A07C00956373 /* AppDelegate.swift in Sources */,
+				849DED5E2A8E9F5E00BA8555 /* HomeVC.swift in Sources */,
 				84A14B7B2A75B10800B5F492 /* UIViewController+Extension.swift in Sources */,
 				84AE0A2F2A8AF64300D0B408 /* AlertController.swift in Sources */,
 				84A14B7D2A75B4D400B5F492 /* String+Extension.swift in Sources */,
+				849DED5A2A8E9EAB00BA8555 /* TabBarVC.swift in Sources */,
 				848434572A76957000544825 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
