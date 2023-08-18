@@ -20,7 +20,7 @@ class HomeScreen: UIView {
     lazy var logoImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.image = UIImage(named: "vector")
+        imageView.image = UIImage(named: "Vector")
         
         return imageView
     }()
@@ -60,8 +60,26 @@ class HomeScreen: UIView {
         return tableView
     }()
     
+    func configCollectionViewProtocol(delegate: UICollectionViewDelegate, dataSource: UICollectionViewDataSource){
+        collectionView.delegate = delegate
+        collectionView.dataSource = dataSource
+        
+    }
+    
+    func configTableViewProtocol(delegate: UITableViewDelegate, dataSource: UITableViewDataSource){
+        tableView.delegate = delegate
+        tableView.dataSource = dataSource
+        
+    }
+    
+    func configSearchBarProtocol(delegate: UISearchBarDelegate){
+        searchBar.delegate = delegate
+        
+    }
+    
     override init(frame:CGRect) {
         super.init(frame: frame)
+        backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
         addViews()
         configConstraints()
     }
@@ -82,15 +100,15 @@ class HomeScreen: UIView {
     
     func configConstraints() {
         NSLayoutConstraint.activate([
-            viewBackground.topAnchor.constraint(equalTo: topAnchor),
+            viewBackground.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
             viewBackground.leadingAnchor.constraint(equalTo: leadingAnchor),
             viewBackground.trailingAnchor.constraint(equalTo: trailingAnchor),
-            viewBackground.heightAnchor.constraint(equalToConstant: 220),
+            viewBackground.heightAnchor.constraint(equalToConstant: 200),
             
-            logoImageView.topAnchor.constraint(equalTo: viewBackground.topAnchor, constant: 45),
+            logoImageView.topAnchor.constraint(equalTo: viewBackground.topAnchor, constant: 5),
             logoImageView.leadingAnchor.constraint(equalTo: leadingAnchor,constant: 24),
             logoImageView.heightAnchor.constraint(equalToConstant: 40),
-            logoImageView.heightAnchor.constraint(equalToConstant: 40),
+            logoImageView.widthAnchor.constraint(equalToConstant: 40),
             
             searchBar.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 10),
             searchBar.leadingAnchor.constraint(equalTo: logoImageView.leadingAnchor),
