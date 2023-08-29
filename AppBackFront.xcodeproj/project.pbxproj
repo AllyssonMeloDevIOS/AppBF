@@ -13,6 +13,9 @@
 		343B9DB128D3A48A00956373 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B9DB028D3A48A00956373 /* LoginScreen.swift */; };
 		693DFD5185132924CB6BFBBD /* Pods_AppBackFront.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B257BC94E05849C69D5F5BE2 /* Pods_AppBackFront.framework */; };
 		848434572A76957000544825 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B9D9E28D3A07C00956373 /* SceneDelegate.swift */; };
+		849873412A8FE6600092247F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849873402A8FE6600092247F /* HomeViewModel.swift */; };
+		849873452A8FE7290092247F /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849873442A8FE7290092247F /* HomeService.swift */; };
+		849873472A8FE76D0092247F /* GenericService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849873462A8FE76D0092247F /* GenericService.swift */; };
 		849DED5A2A8E9EAB00BA8555 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849DED592A8E9EAB00BA8555 /* TabBarVC.swift */; };
 		849DED5E2A8E9F5E00BA8555 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849DED5D2A8E9F5E00BA8555 /* HomeVC.swift */; };
 		84A14B722A75ADD800B5F492 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84A14B712A75ADD800B5F492 /* GoogleService-Info.plist */; };
@@ -22,6 +25,8 @@
 		84A14B7D2A75B4D400B5F492 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A14B7C2A75B4D400B5F492 /* String+Extension.swift */; };
 		84AE0A2F2A8AF64300D0B408 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AE0A2E2A8AF64300D0B408 /* AlertController.swift */; };
 		84AF0FDA2A743F1500536FC7 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AF0FD92A743F1500536FC7 /* Launch Screen.storyboard */; };
+		84B0BF232A91476F00D161E5 /* HomeData.json in Sources */ = {isa = PBXBuildFile; fileRef = 84B0BF222A91476F00D161E5 /* HomeData.json */; };
+		84B0BF262A91489300D161E5 /* NFTData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0BF252A91489300D161E5 /* NFTData.swift */; };
 		84B23AC22A8F89C6002FDF24 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B23AC12A8F89C6002FDF24 /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +38,9 @@
 		343B9DA528D3A07E00956373 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		343B9DAA28D3A07E00956373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		343B9DB028D3A48A00956373 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		849873402A8FE6600092247F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		849873442A8FE7290092247F /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		849873462A8FE76D0092247F /* GenericService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericService.swift; sourceTree = "<group>"; };
 		849DED592A8E9EAB00BA8555 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		849DED5D2A8E9F5E00BA8555 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		84A14B712A75ADD800B5F492 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -40,6 +48,8 @@
 		84A14B7C2A75B4D400B5F492 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		84AE0A2E2A8AF64300D0B408 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		84AF0FD92A743F1500536FC7 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		84B0BF222A91476F00D161E5 /* HomeData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HomeData.json; sourceTree = "<group>"; };
+		84B0BF252A91489300D161E5 /* NFTData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTData.swift; sourceTree = "<group>"; };
 		84B23AC12A8F89C6002FDF24 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		84E513B53CE1EEFE5012C40F /* Pods-AppBackFront.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppBackFront.release.xcconfig"; path = "Target Support Files/Pods-AppBackFront/Pods-AppBackFront.release.xcconfig"; sourceTree = "<group>"; };
 		B257BC94E05849C69D5F5BE2 /* Pods_AppBackFront.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppBackFront.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +99,9 @@
 		343B9D9B28D3A07C00956373 /* AppBackFront */ = {
 			isa = PBXGroup;
 			children = (
+				84B0BF242A91488300D161E5 /* Model */,
+				84B0BF1F2A9146C100D161E5 /* Json */,
+				849873422A8FE7000092247F /* Service */,
 				849DED5B2A8E9EF600BA8555 /* Feature */,
 				849DED582A8E9E1E00BA8555 /* TabBarController */,
 				84AE0A2D2A8AF62F00D0B408 /* Alert */,
@@ -127,6 +140,23 @@
 				343B9DB028D3A48A00956373 /* LoginScreen.swift */,
 			);
 			path = Screen;
+			sourceTree = "<group>";
+		};
+		849873422A8FE7000092247F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				849873432A8FE7180092247F /* HomeService */,
+				849873462A8FE76D0092247F /* GenericService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		849873432A8FE7180092247F /* HomeService */ = {
+			isa = PBXGroup;
+			children = (
+				849873442A8FE7290092247F /* HomeService.swift */,
+			);
+			path = HomeService;
 			sourceTree = "<group>";
 		};
 		849DED582A8E9E1E00BA8555 /* TabBarController */ = {
@@ -181,6 +211,22 @@
 			path = Alert;
 			sourceTree = "<group>";
 		};
+		84B0BF1F2A9146C100D161E5 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				84B0BF222A91476F00D161E5 /* HomeData.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		84B0BF242A91488300D161E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84B0BF252A91489300D161E5 /* NFTData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		84B23AC02A8F89B2002FDF24 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +238,7 @@
 		84B23AC32A8F9AF5002FDF24 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				849873402A8FE6600092247F /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -319,10 +366,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				343B9DA128D3A07C00956373 /* LoginVC.swift in Sources */,
+				849873412A8FE6600092247F /* HomeViewModel.swift in Sources */,
 				343B9DB128D3A48A00956373 /* LoginScreen.swift in Sources */,
 				343B9D9D28D3A07C00956373 /* AppDelegate.swift in Sources */,
+				84B0BF232A91476F00D161E5 /* HomeData.json in Sources */,
 				849DED5E2A8E9F5E00BA8555 /* HomeVC.swift in Sources */,
 				84A14B7B2A75B10800B5F492 /* UIViewController+Extension.swift in Sources */,
+				849873472A8FE76D0092247F /* GenericService.swift in Sources */,
+				849873452A8FE7290092247F /* HomeService.swift in Sources */,
+				84B0BF262A91489300D161E5 /* NFTData.swift in Sources */,
 				84AE0A2F2A8AF64300D0B408 /* AlertController.swift in Sources */,
 				84B23AC22A8F89C6002FDF24 /* HomeScreen.swift in Sources */,
 				84A14B7D2A75B4D400B5F492 /* String+Extension.swift in Sources */,
