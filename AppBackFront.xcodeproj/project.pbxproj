@@ -28,6 +28,8 @@
 		84B0BF232A91476F00D161E5 /* HomeData.json in Sources */ = {isa = PBXBuildFile; fileRef = 84B0BF222A91476F00D161E5 /* HomeData.json */; };
 		84B0BF262A91489300D161E5 /* NFTData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0BF252A91489300D161E5 /* NFTData.swift */; };
 		84B23AC22A8F89C6002FDF24 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B23AC12A8F89C6002FDF24 /* HomeScreen.swift */; };
+		84B4A05D2AA4A4D10046CF4C /* NftFilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4A05C2AA4A4D10046CF4C /* NftFilterCollectionViewCell.swift */; };
+		84B4A0602AA4A5420046CF4C /* NftFilterCollectionViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4A05F2AA4A5420046CF4C /* NftFilterCollectionViewCellScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		84B0BF222A91476F00D161E5 /* HomeData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HomeData.json; sourceTree = "<group>"; };
 		84B0BF252A91489300D161E5 /* NFTData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTData.swift; sourceTree = "<group>"; };
 		84B23AC12A8F89C6002FDF24 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		84B4A05C2AA4A4D10046CF4C /* NftFilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftFilterCollectionViewCell.swift; sourceTree = "<group>"; };
+		84B4A05F2AA4A5420046CF4C /* NftFilterCollectionViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftFilterCollectionViewCellScreen.swift; sourceTree = "<group>"; };
 		84E513B53CE1EEFE5012C40F /* Pods-AppBackFront.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppBackFront.release.xcconfig"; path = "Target Support Files/Pods-AppBackFront/Pods-AppBackFront.release.xcconfig"; sourceTree = "<group>"; };
 		B257BC94E05849C69D5F5BE2 /* Pods_AppBackFront.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppBackFront.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E65C2E51390B0508842A2B41 /* Pods-AppBackFront.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppBackFront.debug.xcconfig"; path = "Target Support Files/Pods-AppBackFront/Pods-AppBackFront.debug.xcconfig"; sourceTree = "<group>"; };
@@ -170,6 +174,8 @@
 		849DED5B2A8E9EF600BA8555 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				84B4A05A2AA4A4A80046CF4C /* Cells */,
+				84B4A05F2AA4A5420046CF4C /* NftFilterCollectionViewCellScreen.swift */,
 				849DED5C2A8E9F1A00BA8555 /* Home */,
 				84353C6C2A74417C00F1D22C /* Login */,
 			);
@@ -241,6 +247,30 @@
 				849873402A8FE6600092247F /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		84B4A05A2AA4A4A80046CF4C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				84B4A05B2AA4A4B10046CF4C /* NftFilter */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		84B4A05B2AA4A4B10046CF4C /* NftFilter */ = {
+			isa = PBXGroup;
+			children = (
+				84B4A05E2AA4A5120046CF4C /* Screen */,
+			);
+			path = NftFilter;
+			sourceTree = "<group>";
+		};
+		84B4A05E2AA4A5120046CF4C /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				84B4A05C2AA4A4D10046CF4C /* NftFilterCollectionViewCell.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,6 +398,7 @@
 				343B9DA128D3A07C00956373 /* LoginVC.swift in Sources */,
 				849873412A8FE6600092247F /* HomeViewModel.swift in Sources */,
 				343B9DB128D3A48A00956373 /* LoginScreen.swift in Sources */,
+				84B4A05D2AA4A4D10046CF4C /* NftFilterCollectionViewCell.swift in Sources */,
 				343B9D9D28D3A07C00956373 /* AppDelegate.swift in Sources */,
 				84B0BF232A91476F00D161E5 /* HomeData.json in Sources */,
 				849DED5E2A8E9F5E00BA8555 /* HomeVC.swift in Sources */,
@@ -375,6 +406,7 @@
 				849873472A8FE76D0092247F /* GenericService.swift in Sources */,
 				849873452A8FE7290092247F /* HomeService.swift in Sources */,
 				84B0BF262A91489300D161E5 /* NFTData.swift in Sources */,
+				84B4A0602AA4A5420046CF4C /* NftFilterCollectionViewCellScreen.swift in Sources */,
 				84AE0A2F2A8AF64300D0B408 /* AlertController.swift in Sources */,
 				84B23AC22A8F89C6002FDF24 /* HomeScreen.swift in Sources */,
 				84A14B7D2A75B4D400B5F492 /* String+Extension.swift in Sources */,
