@@ -27,6 +27,7 @@ class HomeVC: UIViewController {
         viewModel.fetchRequest(.request)
         
         
+        
     }
     
 }

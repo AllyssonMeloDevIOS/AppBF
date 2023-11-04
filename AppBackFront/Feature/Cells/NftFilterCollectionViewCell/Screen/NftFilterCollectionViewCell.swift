@@ -32,7 +32,7 @@ class NftFilterCollectionViewCell: UICollectionViewCell {
         contentView.addSubview(screen)
     }
     
-    func configConstraints() {
+    private func configConstraints() {
         NSLayoutConstraint.activate([
             screen.topAnchor.constraint(equalTo: topAnchor),
             screen.leadingAnchor.constraint(equalTo: leadingAnchor),

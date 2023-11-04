@@ -23,6 +23,8 @@
 		84A14B772A75AEA500B5F492 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 84A14B762A75AEA500B5F492 /* FirebaseCrashlytics */; };
 		84A14B7B2A75B10800B5F492 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A14B7A2A75B10800B5F492 /* UIViewController+Extension.swift */; };
 		84A14B7D2A75B4D400B5F492 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A14B7C2A75B4D400B5F492 /* String+Extension.swift */; };
+		84A8FA2D2AA789C600290346 /* NftTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8FA2C2AA789C600290346 /* NftTableViewCell.swift */; };
+		84A8FA302AA78B1A00290346 /* UitableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8FA2F2AA78B1A00290346 /* UitableViewCellScreen.swift */; };
 		84AE0A2F2A8AF64300D0B408 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AE0A2E2A8AF64300D0B408 /* AlertController.swift */; };
 		84AF0FDA2A743F1500536FC7 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AF0FD92A743F1500536FC7 /* Launch Screen.storyboard */; };
 		84B0BF232A91476F00D161E5 /* HomeData.json in Sources */ = {isa = PBXBuildFile; fileRef = 84B0BF222A91476F00D161E5 /* HomeData.json */; };
@@ -48,6 +50,8 @@
 		84A14B712A75ADD800B5F492 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		84A14B7A2A75B10800B5F492 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		84A14B7C2A75B4D400B5F492 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		84A8FA2C2AA789C600290346 /* NftTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftTableViewCell.swift; sourceTree = "<group>"; };
+		84A8FA2F2AA78B1A00290346 /* UitableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UitableViewCellScreen.swift; sourceTree = "<group>"; };
 		84AE0A2E2A8AF64300D0B408 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		84AF0FD92A743F1500536FC7 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		84B0BF222A91476F00D161E5 /* HomeData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HomeData.json; sourceTree = "<group>"; };
@@ -209,6 +213,23 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		84A8FA2B2AA7897300290346 /* NFTTableviewCell */ = {
+			isa = PBXGroup;
+			children = (
+				84A8FA2E2AA78AFE00290346 /* Screen */,
+				84A8FA2C2AA789C600290346 /* NftTableViewCell.swift */,
+			);
+			path = NFTTableviewCell;
+			sourceTree = "<group>";
+		};
+		84A8FA2E2AA78AFE00290346 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				84A8FA2F2AA78B1A00290346 /* UitableViewCellScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
 		84AE0A2D2A8AF62F00D0B408 /* Alert */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,17 +273,18 @@
 		84B4A05A2AA4A4A80046CF4C /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				84B4A05B2AA4A4B10046CF4C /* NftFilter */,
+				84A8FA2B2AA7897300290346 /* NFTTableviewCell */,
+				84B4A05B2AA4A4B10046CF4C /* NftFilterCollectionViewCell */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		84B4A05B2AA4A4B10046CF4C /* NftFilter */ = {
+		84B4A05B2AA4A4B10046CF4C /* NftFilterCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				84B4A05E2AA4A5120046CF4C /* Screen */,
 			);
-			path = NftFilter;
+			path = NftFilterCollectionViewCell;
 			sourceTree = "<group>";
 		};
 		84B4A05E2AA4A5120046CF4C /* Screen */ = {
@@ -403,8 +425,10 @@
 				84B0BF232A91476F00D161E5 /* HomeData.json in Sources */,
 				849DED5E2A8E9F5E00BA8555 /* HomeVC.swift in Sources */,
 				84A14B7B2A75B10800B5F492 /* UIViewController+Extension.swift in Sources */,
+				84A8FA302AA78B1A00290346 /* UitableViewCellScreen.swift in Sources */,
 				849873472A8FE76D0092247F /* GenericService.swift in Sources */,
 				849873452A8FE7290092247F /* HomeService.swift in Sources */,
+				84A8FA2D2AA789C600290346 /* NftTableViewCell.swift in Sources */,
 				84B0BF262A91489300D161E5 /* NFTData.swift in Sources */,
 				84B4A0602AA4A5420046CF4C /* NftFilterCollectionViewCellScreen.swift in Sources */,
 				84AE0A2F2A8AF64300D0B408 /* AlertController.swift in Sources */,
