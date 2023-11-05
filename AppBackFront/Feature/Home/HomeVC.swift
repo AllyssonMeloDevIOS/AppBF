@@ -23,8 +23,10 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        screen?.configSearchBarProtocol(delegate: self)
         viewModel.delegate(delegate: self)
         viewModel.fetchRequest(.request)
+        
         
         
         
@@ -35,7 +37,11 @@ class HomeVC: UIViewController {
 extension HomeVC: HomeViewModelDelegate {
     func success() {
         print(#function)
-        screen?.configCollectionViewProtocol(delegate: self, dataSource: self)
+        DispatchQueue.main.async {
+            self.screen?.configCollectionViewProtocol(delegate: self, dataSource: self)
+            self.screen?.configTableViewProtocol(delegate: self, dataSource: self)
+            self.screen?.tableView.reloadData()
+        }
     }
     
     func error() {
@@ -61,4 +67,39 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return viewModel.sizeForItemAt
     }
+}
+
+extension HomeVC: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.numberOfRowsInSection
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: NftTableViewCell.identifier, for: indexPath) as?
+        NftTableViewCell
+        
+        cell?.setupCell(data: viewModel.loadCurrentNft(indexPath: indexPath))
+        
+        return cell ?? UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return viewModel.heightForRowAt
+    }
+    
+    
+}
+
+
+extension HomeVC: UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        viewModel.filterSearchText(searchText)
+        screen?.tableView.reloadData()
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+    
 }

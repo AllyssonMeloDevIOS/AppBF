@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UitableViewCellScreen: UIView {
+class NftTableViewCellScreen: UIView {
     
     lazy var viewBackground: UIView = {
         let view = UIView()
@@ -24,8 +24,6 @@ class UitableViewCellScreen: UIView {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleToFill
-        imageView.clipsToBounds = true
-        imageView.layer.cornerRadius = 18
         
         return imageView
     }()
@@ -36,11 +34,12 @@ class UitableViewCellScreen: UIView {
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
         imageView.layer.cornerRadius = 24
+        imageView.tintColor = .black
         
         return imageView
     }()
     
-    lazy var ownerByPrice: UILabel = {
+    lazy var ownedByPriceLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = UIColor(red: 69/255, green: 191/255, blue: 229/255, alpha: 1)
@@ -81,14 +80,16 @@ class UitableViewCellScreen: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
         addViews()
+        configConstraints()
     }
     
     func addViews() {
         addSubview(viewBackground)
         viewBackground.addSubview(nftImageView)
         viewBackground.addSubview(userImageView)
-        viewBackground.addSubview(ownerByPrice)
+        viewBackground.addSubview(ownedByPriceLabel)
         viewBackground.addSubview(userLabel)
         viewBackground.addSubview(priceLabel)
         viewBackground.addSubview(priceValueLabel)
@@ -106,11 +107,26 @@ class UitableViewCellScreen: UIView {
             viewBackground.heightAnchor.constraint(equalToConstant: 340),
             
             nftImageView.topAnchor.constraint(equalTo: viewBackground.topAnchor),
-            nftImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            nftImageView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            nftImageView.leadingAnchor.constraint(equalTo: viewBackground.leadingAnchor),
+            nftImageView.trailingAnchor.constraint(equalTo: viewBackground.trailingAnchor),
             nftImageView.heightAnchor.constraint(equalToConstant: 270),
             
+            userImageView.topAnchor.constraint(equalTo: nftImageView.bottomAnchor, constant: 10),
+            userImageView.leadingAnchor.constraint(equalTo: nftImageView.leadingAnchor,constant: 8),
+            userImageView.heightAnchor.constraint(equalToConstant: 48),
+            userImageView.widthAnchor.constraint(equalToConstant: 48),
             
+            ownedByPriceLabel.topAnchor.constraint(equalTo: nftImageView.bottomAnchor, constant: 20),
+            ownedByPriceLabel.leadingAnchor.constraint(equalTo: userImageView.trailingAnchor, constant: 8),
+            
+            userLabel.topAnchor.constraint(equalTo: ownedByPriceLabel.bottomAnchor, constant: 5),
+            userLabel.leadingAnchor.constraint(equalTo: userImageView.trailingAnchor,constant: 8),
+            
+            priceLabel.topAnchor.constraint(equalTo: nftImageView.bottomAnchor,constant: 20),
+            priceLabel.trailingAnchor.constraint(equalTo: viewBackground.trailingAnchor, constant: -15),
+            
+            priceValueLabel.topAnchor.constraint(equalTo: priceLabel.bottomAnchor,constant: 5),
+            priceValueLabel.trailingAnchor.constraint(equalTo: viewBackground.trailingAnchor, constant: -15),
             
             
         ])
