@@ -15,4 +15,11 @@ class NftDetailViewModel {
         self.nft = nft
     }
     
+    public var numberOfRowsInSection: Int {
+        return 1
+    }
+    
+    public var nftImage: String {
+        return nft.nftImage ?? ""
+    }
 }
