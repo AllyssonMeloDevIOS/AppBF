@@ -12,10 +12,12 @@
 		343B9DA628D3A07E00956373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 343B9DA528D3A07E00956373 /* Assets.xcassets */; };
 		343B9DB128D3A48A00956373 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B9DB028D3A48A00956373 /* LoginScreen.swift */; };
 		693DFD5185132924CB6BFBBD /* Pods_AppBackFront.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B257BC94E05849C69D5F5BE2 /* Pods_AppBackFront.framework */; };
+		847B836B2AFC6EEC00716CD3 /* NftDescriptionTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B836A2AFC6EEC00716CD3 /* NftDescriptionTableViewCellScreen.swift */; };
 		848434572A76957000544825 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B9D9E28D3A07C00956373 /* SceneDelegate.swift */; };
 		849873412A8FE6600092247F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849873402A8FE6600092247F /* HomeViewModel.swift */; };
 		849873452A8FE7290092247F /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849873442A8FE7290092247F /* HomeService.swift */; };
 		849873472A8FE76D0092247F /* GenericService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849873462A8FE76D0092247F /* GenericService.swift */; };
+		849D4E912AFBE9CA0002AA92 /* NftDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849D4E902AFBE9CA0002AA92 /* NftDescriptionTableViewCell.swift */; };
 		849DED5A2A8E9EAB00BA8555 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849DED592A8E9EAB00BA8555 /* TabBarVC.swift */; };
 		849DED5E2A8E9F5E00BA8555 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849DED5D2A8E9F5E00BA8555 /* HomeVC.swift */; };
 		84A14B722A75ADD800B5F492 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84A14B712A75ADD800B5F492 /* GoogleService-Info.plist */; };
@@ -47,9 +49,11 @@
 		343B9DA528D3A07E00956373 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		343B9DAA28D3A07E00956373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		343B9DB028D3A48A00956373 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		847B836A2AFC6EEC00716CD3 /* NftDescriptionTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftDescriptionTableViewCellScreen.swift; sourceTree = "<group>"; };
 		849873402A8FE6600092247F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		849873442A8FE7290092247F /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
 		849873462A8FE76D0092247F /* GenericService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericService.swift; sourceTree = "<group>"; };
+		849D4E902AFBE9CA0002AA92 /* NftDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftDescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		849DED592A8E9EAB00BA8555 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		849DED5D2A8E9F5E00BA8555 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		84A14B712A75ADD800B5F492 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -160,6 +164,14 @@
 			path = Screen;
 			sourceTree = "<group>";
 		};
+		847B83692AFC6EC200716CD3 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				847B836A2AFC6EEC00716CD3 /* NftDescriptionTableViewCellScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
 		849873422A8FE7000092247F /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +187,15 @@
 				849873442A8FE7290092247F /* HomeService.swift */,
 			);
 			path = HomeService;
+			sourceTree = "<group>";
+		};
+		849D4E8F2AFBE97A0002AA92 /* NftDescriptionTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				847B83692AFC6EC200716CD3 /* Screen */,
+				849D4E902AFBE9CA0002AA92 /* NftDescriptionTableViewCell.swift */,
+			);
+			path = NftDescriptionTableViewCell;
 			sourceTree = "<group>";
 		};
 		849DED582A8E9E1E00BA8555 /* TabBarController */ = {
@@ -283,6 +304,7 @@
 		84B4A05A2AA4A4A80046CF4C /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				849D4E8F2AFBE97A0002AA92 /* NftDescriptionTableViewCell */,
 				84B5BA0D2AFB87380077C405 /* NftImageTableViewCell */,
 				84A8FA2B2AA7897300290346 /* NFTTableviewCell */,
 				84B4A05B2AA4A4B10046CF4C /* NftFilterCollectionViewCell */,
@@ -477,6 +499,7 @@
 				343B9DB128D3A48A00956373 /* LoginScreen.swift in Sources */,
 				84B4A05D2AA4A4D10046CF4C /* NftFilterCollectionViewCell.swift in Sources */,
 				343B9D9D28D3A07C00956373 /* AppDelegate.swift in Sources */,
+				847B836B2AFC6EEC00716CD3 /* NftDescriptionTableViewCellScreen.swift in Sources */,
 				84B0BF232A91476F00D161E5 /* HomeData.json in Sources */,
 				84B5BA122AFB88660077C405 /* NftImageTableViewCellScreen.swift in Sources */,
 				849DED5E2A8E9F5E00BA8555 /* HomeVC.swift in Sources */,
@@ -488,6 +511,7 @@
 				84A8FA2D2AA789C600290346 /* NftTableViewCell.swift in Sources */,
 				84B0BF262A91489300D161E5 /* NFTData.swift in Sources */,
 				84B5BA0F2AFB875E0077C405 /* NftImageTableViewCell.swift in Sources */,
+				849D4E912AFBE9CA0002AA92 /* NftDescriptionTableViewCell.swift in Sources */,
 				84B4A0602AA4A5420046CF4C /* NftFilterCollectionViewCellScreen.swift in Sources */,
 				84B782592AF8EAF000CA571D /* NftDetailViewModel.swift in Sources */,
 				84AE0A2F2A8AF64300D0B408 /* AlertController.swift in Sources */,

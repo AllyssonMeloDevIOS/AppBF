@@ -7,8 +7,19 @@
 
 import UIKit
 
+protocol NftImageTableViewCellScreenDelegate: AnyObject {
+    func tappedCloseButton()
+    func tappedMagnifyingGlassButton()
+}
+
 class NftImageTableViewCellScreen: UIView {
 
+    private var delegate: NftImageTableViewCellScreenDelegate?
+    
+    public func delegate(delegate: NftImageTableViewCellScreenDelegate?) {
+        self.delegate = delegate
+    }
+    
     lazy var NftImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -32,7 +43,7 @@ class NftImageTableViewCellScreen: UIView {
     }()
     
     @objc func tappedCloseButton() {
-        print(#function)
+        delegate?.tappedCloseButton()
         
     }
     
@@ -50,7 +61,7 @@ class NftImageTableViewCellScreen: UIView {
     }()
     
     @objc func tappedMaginfyingGlassButton() {
-        print(#function)
+        delegate?.tappedMagnifyingGlassButton()
         
     }
     
@@ -87,6 +98,7 @@ class NftImageTableViewCellScreen: UIView {
             maginfyingGlassButton.trailingAnchor.constraint(equalTo: NftImageView.trailingAnchor, constant: -20),
             maginfyingGlassButton.heightAnchor.constraint(equalToConstant: 35),
             maginfyingGlassButton.widthAnchor.constraint(equalToConstant: 35),
+            
             
             
         ])
