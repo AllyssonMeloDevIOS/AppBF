@@ -50,7 +50,7 @@ class NftDetailViewModel {
 //            var totalLabel = nftDescription.height(withConstrainedWidth: width - 40, font: UIFont.systemFont(ofSize: 18))
 //            return 5 + totalLabel + 5 + 30 + 5 + 24 + 10 + 10
         case .latestDeal:
-            return 400
+            return HeightLatestDeal.height.rawValue * CGFloat(nft.latestDeals?.count ?? 0) + 75
         default:
             return 0
         }

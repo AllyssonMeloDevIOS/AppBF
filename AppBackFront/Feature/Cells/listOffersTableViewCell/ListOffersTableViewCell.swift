@@ -20,6 +20,7 @@ class ListOffersTableViewCell: UITableViewCell {
     }()
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 26/255, alpha: 1)
         addViews()
         configConstraints()
         
@@ -55,6 +56,12 @@ class ListOffersTableViewCell: UITableViewCell {
         screen.nftPriceLabel.text = "\(data.nftPrice ?? 0) ETH"
         screen.lastVisualizationLabel.text = data.lastAccess ?? ""
         
+        if isInicial {
+            screen.roundCorners(cornerRadius: 20, typeCorners: [.topLeft, .topRight])
+        }
+        if isFinal {
+            screen.roundCorners(cornerRadius: 20, typeCorners: [.bottomLeft, .bottomRight])
+        }
     }
 }
 
