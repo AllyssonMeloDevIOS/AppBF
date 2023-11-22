@@ -26,10 +26,7 @@ class HomeVC: UIViewController {
         screen?.configSearchBarProtocol(delegate: self)
         viewModel.delegate(delegate: self)
         viewModel.fetchRequest(.request)
-        
-        
-        
-        
+
     }
     
 }
@@ -47,7 +44,6 @@ extension HomeVC: HomeViewModelDelegate {
     func error() {
         print(#function)
     }
-    
     
 }
 

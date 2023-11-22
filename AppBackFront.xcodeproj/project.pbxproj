@@ -20,6 +20,8 @@
 		849D4E912AFBE9CA0002AA92 /* NftDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849D4E902AFBE9CA0002AA92 /* NftDescriptionTableViewCell.swift */; };
 		849DED5A2A8E9EAB00BA8555 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849DED592A8E9EAB00BA8555 /* TabBarVC.swift */; };
 		849DED5E2A8E9F5E00BA8555 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849DED5D2A8E9F5E00BA8555 /* HomeVC.swift */; };
+		84A0AEBA2B0E754F0040FD43 /* WalletData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0AEB92B0E754F0040FD43 /* WalletData.swift */; };
+		84A0AEBD2B0E770E0040FD43 /* WalletData.json in Resources */ = {isa = PBXBuildFile; fileRef = 84A0AEBC2B0E770E0040FD43 /* WalletData.json */; };
 		84A14B722A75ADD800B5F492 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84A14B712A75ADD800B5F492 /* GoogleService-Info.plist */; };
 		84A14B752A75AEA500B5F492 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 84A14B742A75AEA500B5F492 /* FirebaseAuth */; };
 		84A14B772A75AEA500B5F492 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 84A14B762A75AEA500B5F492 /* FirebaseCrashlytics */; };
@@ -27,6 +29,10 @@
 		84A14B7D2A75B4D400B5F492 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A14B7C2A75B4D400B5F492 /* String+Extension.swift */; };
 		84A2D7802B0E067F0048A88E /* MagnifyingGlassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2D77F2B0E067F0048A88E /* MagnifyingGlassVC.swift */; };
 		84A2D7832B0E06A00048A88E /* MagnifyingGlassScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2D7822B0E06A00048A88E /* MagnifyingGlassScreen.swift */; };
+		84A2D7862B0E11850048A88E /* WalletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2D7852B0E11850048A88E /* WalletVC.swift */; };
+		84A2D7892B0E11A20048A88E /* WalletScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2D7882B0E11A20048A88E /* WalletScreen.swift */; };
+		84A2D78C2B0E16260048A88E /* WalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2D78B2B0E16260048A88E /* WalletViewModel.swift */; };
+		84A2D78F2B0E16600048A88E /* WalletService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2D78E2B0E16600048A88E /* WalletService.swift */; };
 		84A8FA2D2AA789C600290346 /* NftTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8FA2C2AA789C600290346 /* NftTableViewCell.swift */; };
 		84A8FA302AA78B1A00290346 /* NftTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8FA2F2AA78B1A00290346 /* NftTableViewCellScreen.swift */; };
 		84AE0A2F2A8AF64300D0B408 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AE0A2E2A8AF64300D0B408 /* AlertController.swift */; };
@@ -64,11 +70,17 @@
 		849D4E902AFBE9CA0002AA92 /* NftDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftDescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		849DED592A8E9EAB00BA8555 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		849DED5D2A8E9F5E00BA8555 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		84A0AEB92B0E754F0040FD43 /* WalletData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletData.swift; sourceTree = "<group>"; };
+		84A0AEBC2B0E770E0040FD43 /* WalletData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = WalletData.json; sourceTree = "<group>"; };
 		84A14B712A75ADD800B5F492 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		84A14B7A2A75B10800B5F492 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		84A14B7C2A75B4D400B5F492 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		84A2D77F2B0E067F0048A88E /* MagnifyingGlassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnifyingGlassVC.swift; sourceTree = "<group>"; };
 		84A2D7822B0E06A00048A88E /* MagnifyingGlassScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnifyingGlassScreen.swift; sourceTree = "<group>"; };
+		84A2D7852B0E11850048A88E /* WalletVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletVC.swift; sourceTree = "<group>"; };
+		84A2D7882B0E11A20048A88E /* WalletScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletScreen.swift; sourceTree = "<group>"; };
+		84A2D78B2B0E16260048A88E /* WalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewModel.swift; sourceTree = "<group>"; };
+		84A2D78E2B0E16600048A88E /* WalletService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletService.swift; sourceTree = "<group>"; };
 		84A8FA2C2AA789C600290346 /* NftTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftTableViewCell.swift; sourceTree = "<group>"; };
 		84A8FA2F2AA78B1A00290346 /* NftTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftTableViewCellScreen.swift; sourceTree = "<group>"; };
 		84AE0A2E2A8AF64300D0B408 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
@@ -191,6 +203,7 @@
 		849873422A8FE7000092247F /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				84A2D78D2B0E164A0048A88E /* WalletService */,
 				849873432A8FE7180092247F /* HomeService */,
 				849873462A8FE76D0092247F /* GenericService.swift */,
 			);
@@ -225,6 +238,7 @@
 		849DED5B2A8E9EF600BA8555 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				84A2D7842B0E11700048A88E /* Wallet */,
 				84A2D77E2B0E064E0048A88E /* MagnifyingGlass */,
 				84B782542AF8EAB500CA571D /* NftDetail */,
 				84B4A05A2AA4A4A80046CF4C /* Cells */,
@@ -279,6 +293,40 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
+		84A2D7842B0E11700048A88E /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				84A2D78A2B0E16060048A88E /* ViewModel */,
+				84A2D7872B0E118F0048A88E /* Screen */,
+				84A2D7852B0E11850048A88E /* WalletVC.swift */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		84A2D7872B0E118F0048A88E /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				84A2D7882B0E11A20048A88E /* WalletScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		84A2D78A2B0E16060048A88E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				84A2D78B2B0E16260048A88E /* WalletViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		84A2D78D2B0E164A0048A88E /* WalletService */ = {
+			isa = PBXGroup;
+			children = (
+				84A2D78E2B0E16600048A88E /* WalletService.swift */,
+			);
+			path = WalletService;
+			sourceTree = "<group>";
+		};
 		84A8FA2B2AA7897300290346 /* NFTTableviewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,6 +373,7 @@
 			isa = PBXGroup;
 			children = (
 				84B0BF222A91476F00D161E5 /* HomeData.json */,
+				84A0AEBC2B0E770E0040FD43 /* WalletData.json */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -333,6 +382,7 @@
 			isa = PBXGroup;
 			children = (
 				84B0BF252A91489300D161E5 /* NFTData.swift */,
+				84A0AEB92B0E754F0040FD43 /* WalletData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -521,6 +571,7 @@
 			files = (
 				84AF0FDA2A743F1500536FC7 /* Launch Screen.storyboard in Resources */,
 				343B9DA628D3A07E00956373 /* Assets.xcassets in Resources */,
+				84A0AEBD2B0E770E0040FD43 /* WalletData.json in Resources */,
 				84A14B722A75ADD800B5F492 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -574,14 +625,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A2D78C2B0E16260048A88E /* WalletViewModel.swift in Sources */,
 				343B9DA128D3A07C00956373 /* LoginVC.swift in Sources */,
+				84A2D78F2B0E16600048A88E /* WalletService.swift in Sources */,
 				849873412A8FE6600092247F /* HomeViewModel.swift in Sources */,
 				343B9DB128D3A48A00956373 /* LoginScreen.swift in Sources */,
 				84B4A05D2AA4A4D10046CF4C /* NftFilterCollectionViewCell.swift in Sources */,
 				343B9D9D28D3A07C00956373 /* AppDelegate.swift in Sources */,
 				847B836B2AFC6EEC00716CD3 /* NftDescriptionTableViewCellScreen.swift in Sources */,
+				84A2D7892B0E11A20048A88E /* WalletScreen.swift in Sources */,
 				84B0BF232A91476F00D161E5 /* HomeData.json in Sources */,
 				84B5BA122AFB88660077C405 /* NftImageTableViewCellScreen.swift in Sources */,
+				84A0AEBA2B0E754F0040FD43 /* WalletData.swift in Sources */,
 				849DED5E2A8E9F5E00BA8555 /* HomeVC.swift in Sources */,
 				84A2D7832B0E06A00048A88E /* MagnifyingGlassScreen.swift in Sources */,
 				84A14B7B2A75B10800B5F492 /* UIViewController+Extension.swift in Sources */,
@@ -598,6 +653,7 @@
 				849D4E912AFBE9CA0002AA92 /* NftDescriptionTableViewCell.swift in Sources */,
 				84B4A0602AA4A5420046CF4C /* NftFilterCollectionViewCellScreen.swift in Sources */,
 				84BE03B32B0A231C00C0A2A0 /* LatestDealTableViewCellScreen.swift in Sources */,
+				84A2D7862B0E11850048A88E /* WalletVC.swift in Sources */,
 				84AFD0392B0C41350022F302 /* ListOffersTableViewCell.swift in Sources */,
 				84BE03B62B0A26CE00C0A2A0 /* LatestDealTableViewCellViewModel.swift in Sources */,
 				84B782592AF8EAF000CA571D /* NftDetailViewModel.swift in Sources */,
