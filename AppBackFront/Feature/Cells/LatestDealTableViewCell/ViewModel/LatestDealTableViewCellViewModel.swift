@@ -2,7 +2,7 @@
 //  LatestDealTableViewCellViewModel.swift
 //  AppBackFront
 //
-//  Created by admin on 19/11/23.
+//  Created by admin on 08/12/23.
 //
 
 import UIKit
@@ -38,8 +38,9 @@ class LatestDealTableViewCellViewModel: NSObject {
     public func isInicial(indexPath: IndexPath) -> Bool {
         return indexPath.row == 0
     }
-
+    
     public func isFinal(indexPath: IndexPath) -> Bool {
         return indexPath.row == numberOfRowsInSection - 1
     }
 }
+

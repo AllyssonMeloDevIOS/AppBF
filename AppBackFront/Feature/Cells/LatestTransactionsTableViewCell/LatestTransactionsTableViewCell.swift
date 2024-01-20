@@ -1,20 +1,20 @@
 //
-//  LatestDealTableViewCell.swift
+//  LatestTransactionsTableViewCell.swift
 //  AppBackFront
 //
-//  Created by admin on 19/11/23.
+//  Created by admin on 08/12/23.
 //
 
 import UIKit
 
-class LatestDealTableViewCell: UITableViewCell {
+class LatestTransactionsTableViewCell: UITableViewCell {
     
-    static let identifier: String = String(describing: LatestDealTableViewCell.self)
+    static let identifier: String = String(describing: LatestTransactionsTableViewCell.self)
     
-    var viewModel: LatestDealTableViewCellViewModel = LatestDealTableViewCellViewModel()
+    var viewModel: LatestTransactionsTableViewCellViewModel = LatestTransactionsTableViewCellViewModel()
     
-    private lazy var screen: LatestDealTableViewCellScreen = {
-        let view = LatestDealTableViewCellScreen()
+    private lazy var screen: LatestTransactionsTableViewCellScreen = {
+        let view = LatestTransactionsTableViewCellScreen()
         view.translatesAutoresizingMaskIntoConstraints = false
         
         return view
@@ -47,20 +47,19 @@ class LatestDealTableViewCell: UITableViewCell {
         
     }
     
-
-    public func setupCell(data: Nft) {
-        viewModel.setNft(nft: data)
+    public func setupCell(data: LatestTransactionsCell) {
+        viewModel.setLatestTransactions(data: data)
         screen.titleLabel.text = viewModel.title
     }
 }
 
-extension LatestDealTableViewCell: UITableViewDelegate, UITableViewDataSource {
+extension LatestTransactionsTableViewCell: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.numberOfRowsInSection
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: ListOffersTableViewCell.identifier, for: indexPath) as? ListOffersTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: ListOfTransactionTableViewCell.identifier, for: indexPath) as? ListOfTransactionTableViewCell
         cell?.setupCell(data: viewModel.loadCurrentLatestDeal(indexPath: indexPath), isInicial: viewModel.isInicial(indexPath: indexPath), isFinal: viewModel.isFinal(indexPath: indexPath))
         return cell ?? UITableViewCell()
     }
